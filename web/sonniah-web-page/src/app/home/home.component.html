@@ -1,0 +1,70 @@
+
+<div class="home-nav">
+  <nav *ngIf="!showMenu" class="nav-wrap">
+    <ul class="nav-list">
+      <li class="nav-item">
+        <a href="#">HOME</a>
+      </li>
+      <li class="nav-item">
+        <a href="#">ABOUT</a>
+      </li>
+      <li class="nav-item">
+        <a href="#">SHOP</a>
+      </li>
+      <li class="nav-item">
+        <a href="#">TOUR</a>
+      </li>
+      <li class="nav-item">
+        <a href="#">CONTACT</a>
+      </li>
+    </ul>
+  </nav>
+  <div *ngIf="showMenu" class="nav-wrap">
+    <button class="btn-primary" mat-button [matMenuTriggerFor]="menu">MENU</button>
+    <mat-menu #menu="matMenu">
+      <button class="menu-btn" mat-menu-item routerLink="/">HOME</button>
+      <button class="menu-btn" mat-menu-item routerLink="/about">ABOUT</button>
+      <button class="menu-btn" mat-menu-item routerLink="/shop">SHOP</button>
+      <button class="menu-btn" mat-menu-item routerLink="/tour">TOUR</button>
+      <button class="menu-btn" mat-menu-item routerLink="/contact">CONTACT</button>
+    </mat-menu>
+  </div>
+  <div class="btn-div">
+    <button class="btn-primary" (click)="toggleSearchBar()"><mat-icon>search</mat-icon>
+    </button>
+  </div>
+
+</div>
+
+<div class="search-bar" *ngIf="isSearchBarVisible">
+  <input type="text" placeholder="Search...">
+  <button class="btn-search"><mat-icon>search</mat-icon></button>
+</div>
+
+
+<!--
+<div class="nav-wrapper">
+  <div *ngIf="showMenu" class="menu-container">
+    <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item routerLink="/">Home</button>
+      <button mat-menu-item routerLink="/about">About</button>
+      <button mat-menu-item routerLink="/services">Services</button>
+      <button mat-menu-item routerLink="/contact">Contact</button>
+    </mat-menu>
+  </div>
+  <div *ngIf="!showMenu" class="buttons-container" >
+    <ul class="ul-nav">
+
+      <li class="li-nav"><a>Home</a></li>
+      <li class="li-nav"><a>About</a></li>
+      <li class="li-nav"><a>Contact</a></li>
+      <li class="li-nav"><a>Tour</a></li>
+      <li class="li-nav"><a>Shop</a></li>
+
+    </ul>
+  </div>
+  <div class="search-div">
+    <button class="search-button"><mat-icon>search</mat-icon></button>
+  </div>
+</div> -->
