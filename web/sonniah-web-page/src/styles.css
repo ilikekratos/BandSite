@@ -1,10 +1,50 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%;width: 100%;padding: 0;margin: 0;min-width: 100%;min-height: 100%; }
-body { margin: 0; font-family: 'Intro'; }
+html, body { height: 100%;width: 100%;padding: 0;margin: 0;min-width: 100%;min-height: 100%; overflow-x: hidden;margin: 0; font-family: 'Intro'; }
 @font-face {
   font-family: 'Intro';
   src: url('assets/Intro.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
+  overflow: hidden;
+}
+html{
+  overflow: hidden; 
+}
+.main-wrapper{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.image-container{
+  margin: 0;
+  padding: 0;
+  transform: translateZ(0);
+  width: 100%;
+  height: 100%;
+  position:absolute;
+  z-index: -1;
+}
+.band-image{
+  width: 100%;
+}
+.top-pad{
+  height: 50vh;
+}
+
+.filler{
+  height: 100vh;
+  background-color: red;
+  transform: translateZ(-1px);
+}
+.logo{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5vh;
+}
+.logo-image{
+  width: 50vw;
 }
