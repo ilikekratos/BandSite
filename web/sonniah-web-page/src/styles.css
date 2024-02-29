@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%;width: 100%;padding: 0;margin: 0;min-width: 100%;min-height: 100%; overflow-x: hidden;margin: 0; font-family: 'Intro'; }
+html, body { height: 100%;width: 100%;padding: 0;margin: 0;min-width: 100%;min-height: 100%; overflow-x: hidden;margin: 0;  }
 @font-face {
   font-family: 'Intro';
   src: url('assets/Intro.otf') format('opentype');
@@ -33,10 +33,14 @@ html{
   height: 50vh;
 }
 
-.filler{
+.myroot{
   height: 100vh;
-  background-color: red;
+  width: 100%;
+  background-color: gray;
   transform: translateZ(-1px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .logo{
   width: 100%;
@@ -47,4 +51,7 @@ html{
 }
 .logo-image{
   width: 50vw;
+}
+.app-shows{
+  width: 100%;
 }

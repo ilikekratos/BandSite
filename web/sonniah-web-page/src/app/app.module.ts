@@ -4,10 +4,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './home/home.component';
 import {MaterialModule} from './material-module'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ShowsComponent } from './shows/shows.component';
 
 @NgModule({
   declarations: [
-    HomeComponent
+    HomeComponent,
+    ShowsComponent
   ],
   imports: [
     BrowserModule,
@@ -16,6 +18,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MaterialModule,
   ],
   providers: [],
-  bootstrap: [HomeComponent]
+  bootstrap: [HomeComponent,ShowsComponent]
 })
 export class AppModule { }
